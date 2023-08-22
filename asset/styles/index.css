@@ -165,10 +165,8 @@ nav {
     background: red;
     background: -moz-linear-gradient(top, red 0%, red 44%, #1f0000 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, red), color-stop(44%, red), color-stop(100%, #1f0000));
-    /* background: -webkit-linear-gradient(top, red 0%, red 44%, #1f0000 100%); */
     background: -o-linear-gradient(top, red 0%, red 44%, #1f0000 100%);
     background: -ms-linear-gradient(top, red 0%, red 44%, #1f0000 100%);
-    /* background: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(44%, red), to(#1f0000)); */
     background: linear-gradient(to bottom, red 0%, red 44%, #1f0000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#1f0000', GradientType=0);
     z-index: 2;
