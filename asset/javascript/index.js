@@ -1,14 +1,15 @@
-const navMenu = document.querySelector(".nav-link ul");
-const navToggle = document.getElementById("nav_toggle");
-const dropdown = document.querySelector(".dropdown-menu");
+const navMenu = document.querySelector(".nav-link");
+const navToggle = document.querySelector(".nav-bar-toggle-open");
+const bannerSection = document.querySelector("#banner");
 
 navToggle.addEventListener("click", () => {
-    if(navMenu.style.display === "flex") {
-        navMenu.style.display = "none";
-        
-    }else {
-        navMenu.style.display = "flex";
+    navMenu.classList.toggle("active");
+    if (navMenu.classList.contains("active")) {
+        bannerSection.style.transform = "translateY(350px)"; // Adjust this value based on your navigation menu height
+    } else {
+        bannerSection.style.transform = "translateY(0)";
     }
 });
+
 
 
