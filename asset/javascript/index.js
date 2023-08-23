@@ -1,6 +1,7 @@
 const navMenu = document.querySelector(".nav-link");
 const navToggle = document.querySelector(".nav-bar-toggle-open");
 const bannerSection = document.querySelector("#banner");
+const heroSection = document.querySelector(".hero");
 
 navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
@@ -9,6 +10,13 @@ navToggle.addEventListener("click", () => {
     } else {
         bannerSection.style.transform = "translateY(0)";
     }
+}); 
+
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const scrollSpeed = 0.5; // Adjust the scroll speed factor
+    
+    heroSection.style.backgroundPositionY = `calc(50% + ${scrollY * scrollSpeed}px)`;
 });
 
 
