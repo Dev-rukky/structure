@@ -49,6 +49,11 @@ nav {
     z-index: 9999;
 }
 
+.nav-white {
+    background-color: #fff;
+    padding: 2px 0px;
+}
+
 .nav-link ul {
     display: flex;
     align-items: center;
