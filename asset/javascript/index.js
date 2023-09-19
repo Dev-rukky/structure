@@ -22,4 +22,7 @@ window.addEventListener("scroll", () => {
 });
 
 
+const navColor = () => {
+    
+}
 

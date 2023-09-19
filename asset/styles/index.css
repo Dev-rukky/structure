@@ -74,6 +74,10 @@ nav {
     /* padding: 8px 16px; */
 }
 
+.nav-menu a{
+    color: #000;
+}
+
 .nav-logo a {
     font-size: 22px;
     font-weight: 700;
