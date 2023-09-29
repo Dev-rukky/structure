@@ -660,11 +660,90 @@ nav {
 
 .btn-5-flex {
     display: flex;
+    gap: 1%;
+}
+
+.input-1-heading {
+    margin-bottom: 8px;
+}
+
+.input-1-heading h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.default-input {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding: 0px 15px 0 0;
+}
+
+.default-input input {
+    height: 48px;
+    background: #fff;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 15px;
+
+}
+
+.default-input input:active {
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.default-input input:focus {
+    outline: 0;
 }
 
 
+.floating-input label {
+    position: absolute;
+    padding: 7px 0 0 15px;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+    opacity: .8;
+    /* left: 145px; */
+    transform: translate(-130%, 10%);
+}
 
 
+/* .floating-input label:focus {
+    font-size: 95%;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+} */
+
+.label-float {
+    font-size: 95%;
+    -webkit-transform: translate3d(0, -100%, 0) !important;
+    transform: translate3d(-150%, -100%, 0) !important;
+    opacity: 1 !important;
+}
+
+.inputs-1-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+.success-input input {
+    border-color: #64e291;
+    color: #777777;
+    background: #cff6dd !important;
+}
+
+
+.error-input input {
+    border-color: #e63333;
+    color: #777777;
+    background: #f9d2d2 !important;
+}
 
 
 

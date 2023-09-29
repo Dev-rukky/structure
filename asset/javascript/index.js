@@ -8,7 +8,8 @@ const dropBtn2 = document.getElementById("dropdown-btn2");
 const dropInfo2 = document.getElementById("dropdown-info2");
 const dropBtn3 = document.getElementById("dropdown-btn3");
 const dropInfo3 = document.getElementById("dropdown-info3");
-
+const floatEl = document.getElementById("float-input");
+const labelEl = document.getElementById("float-label");
 
 
 navToggle.addEventListener("click", () => {
@@ -56,3 +57,6 @@ dropBtn3.addEventListener("click", () => {
 });
 
 
+floatEl.addEventListener("click", () => {
+    labelEl.classList.toggle("label-float");
+})
