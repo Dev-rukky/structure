@@ -2,6 +2,13 @@ const navMenu = document.querySelector(".nav-link");
 const navToggle = document.querySelector(".nav-bar-toggle-open");
 const bannerSection = document.querySelector("#banner");
 const heroSection = document.querySelector(".hero");
+const dropBtn1 = document.getElementById("dropdown-btn1");
+const dropInfo1 = document.getElementById("dropdown-info1");
+const dropBtn2 = document.getElementById("dropdown-btn2");
+const dropInfo2 = document.getElementById("dropdown-info2");
+const dropBtn3 = document.getElementById("dropdown-btn3");
+const dropInfo3 = document.getElementById("dropdown-info3");
+
 
 
 navToggle.addEventListener("click", () => {
@@ -13,6 +20,7 @@ navToggle.addEventListener("click", () => {
     }
 });
 
+
 window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
     const scrollSpeed = 0.5;
@@ -22,7 +30,29 @@ window.addEventListener("scroll", () => {
 });
 
 
-const navColor = () => {
-    
+
+const hideAllExcept = (elementToKeep) => {
+    const elementsToHide = [dropInfo1, dropInfo2, dropInfo3];
+    elementsToHide.forEach(element => {
+        if (element !== elementToKeep) {
+            element.classList.remove("drop-show");
+        }
+    });
 }
+
+dropBtn1.addEventListener("click", () => {
+    dropInfo1.classList.toggle("drop-show");
+    hideAllExcept(dropInfo1);
+});
+
+dropBtn2.addEventListener("click", () => {
+    dropInfo2.classList.toggle("drop-show");
+    hideAllExcept(dropInfo2);
+});
+
+dropBtn3.addEventListener("click", () => {
+    dropInfo3.classList.toggle("drop-show");
+    hideAllExcept(dropInfo3);
+});
+
 

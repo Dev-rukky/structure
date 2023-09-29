@@ -44,14 +44,32 @@ nav {
     justify-content: center;
     width: 100%;
     position: fixed;
-    column-gap: 28%;
+    column-gap: 22%;
     padding: 20px 15px 20px;
     z-index: 9999;
 }
 
 .nav-white {
     background-color: #fff;
-    padding: 2px 0px;
+    padding: 0px;
+
+    .nav-link ul li a {
+        color: #2c2c2c;
+    }
+
+    .nav-logo a {
+        color: #2c2c2c;
+    }
+
+    .premium a {
+        background-color: var(--danger-color);
+        color: #fff !important;
+        border-radius: 0px;
+    }
+
+    .nav-link ul li {
+        padding: 0px 16px;
+    }
 }
 
 .nav-link ul {
@@ -74,7 +92,7 @@ nav {
     /* padding: 8px 16px; */
 }
 
-.nav-menu a{
+.nav-menu a {
     color: #000;
 }
 
@@ -617,8 +635,32 @@ nav {
 }
 
 
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 4px;
 
+}
 
+.drop-content a {
+    padding: 12px 16px;
+    display: block;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-weight: 400;
+}
+
+.drop-show {
+    display: block;
+}
+
+.btn-5-flex {
+    display: flex;
+}
 
 
 
