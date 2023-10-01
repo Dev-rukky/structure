@@ -10,6 +10,17 @@ const dropBtn3 = document.getElementById("dropdown-btn3");
 const dropInfo3 = document.getElementById("dropdown-info3");
 const floatEl = document.getElementById("float-input");
 const labelEl = document.getElementById("float-label");
+const uncheckEl = document.getElementById("unchecked-icon");
+const checkEl = document.getElementById("checked-icon");
+const UncheckInput = document.getElementById("unchecked");
+const checkInput = document.getElementById("checked");
+
+
+
+
+
+
+
 
 
 navToggle.addEventListener("click", () => {
@@ -60,3 +71,14 @@ dropBtn3.addEventListener("click", () => {
 floatEl.addEventListener("click", () => {
     labelEl.classList.toggle("label-float");
 })
+
+
+uncheckEl.addEventListener("click", () => {
+    uncheckEl.classList.add("click-check");
+    checkEl.classList.remove("clicked-check");
+}) 
+
+checkEl.addEventListener("click", () => {
+    checkEl.classList.add("click-check");
+    uncheckEl.classList.remove("unclick-check");
+}) 

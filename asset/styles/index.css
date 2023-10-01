@@ -840,16 +840,78 @@ nav {
     border: none;
 }
 
-.check1:checked {
-    width: 16px;
-    height: 16px;
-}
+
 
 .radios {
     padding-top: 3rem;
 }
 
 
+.checkbox-1 {
+    display: block;
+    position: relative;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.check1 {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    border-radius: 3px;
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #aaa;
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+    /* background: url(/asset/images/checkmark.svg), #f44336;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center; */
+}
+
+.click-check {
+    background: url(/asset/images/checkmark.svg), #f44336;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    border: none;
+}
+
+.unclick-check {
+    background: none;
+    border: 1px solid #aaa;
+}
+
+/* .checkmark-2 {
+    border: none;
+} */
+
+
+.label {
+    color: #bfbfbf;
+}
+
+.checkmark-dis {
+    background: transparent;
+}
+
+.checkmark-dis1 {
+    background: url(/asset/images/checkmark.svg), #aaa;
+}
 
 
 
