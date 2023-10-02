@@ -118,13 +118,13 @@
                     <p>Pick your color</p>
                 </div>
                 <div class="btn-1-flex btn-2-flex btn-3-flex">
-                    <button type="button" class="primary">Primary</button>
-                    <button type="button" class="success">Success</button>
-                    <button type="button" class="danger">Danger</button>
-                    <button type="button" class="warning">Warning</button>
-                    <button type="button" class="info">Info</button>
-                    <button type="button" class="light">Light</button>
-                    <button type="button" class="dark">Dark</button>
+                    <button type="button" class="primary-btn">Primary</button>
+                    <button type="button" class="success-btn">Success</button>
+                    <button type="button" class="danger-btn">Danger</button>
+                    <button type="button" class="warning-btn">Warning</button>
+                    <button type="button" class="info-btn">Info</button>
+                    <button type="button" class="light-btn">Light</button>
+                    <button type="button" class="dark-btn">Dark</button>
                 </div>
                 <div class="btn-1-flex btn-2-flex-outline btn-3-flex-outline">
                     <button type="button" class="primary-outline">Primary</button>
@@ -171,7 +171,7 @@
                 </div>
                 <div class="btn-1-flex btn-2-flex btn-3-flex btn-4-flex btn-5-flex">
                     <div class="dropdown-menu-2">
-                        <button class="dropbtn primary" id="dropdown-btn1">Dropdown button<span
+                        <button class="dropbtn primary-btn" id="dropdown-btn1">Dropdown button<span
                                 class="dropdown-toggle"></span></button>
 
                         <div class="drop-content" id="dropdown-info1">
@@ -183,7 +183,7 @@
                         </div>
                     </div>
                     <div class="dropdown-menu-2">
-                        <button class="dropbtn success" id="dropdown-btn2">Dropdown button<span
+                        <button class="dropbtn success-btn" id="dropdown-btn2">Dropdown button<span
                                 class="dropdown-toggle"></span></button>
 
                         <div class="drop-content" id="dropdown-info2">
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                     <div class="dropdown-menu-2">
-                        <button class="dropbtn primary" id="dropdown-btn3">Dropdown button<span
+                        <button class="dropbtn primary-btn" id="dropdown-btn3">Dropdown button<span
                                 class="dropdown-toggle"></span></button>
 
 
@@ -216,8 +216,8 @@
                     <p>Block Level Buttons</p>
                 </div>
                 <div class="btn-1-flex btn-2-flex btn-3-flex btn-4-flex">
-                    <button type="button" class="warning btn-block">Block Level Info</button>
-                    <button type="button" class="info btn-block">Block Level Success</button>
+                    <button type="button" class="warning-btn btn-block">Block Level Info</button>
+                    <button type="button" class="info-btn btn-block">Block Level Success</button>
                 </div>
             </div>
 
@@ -315,7 +315,7 @@
 
     <section class="radios button button-container">
         <div class="radio-container">
-            <div class="radio-1">
+            <div class="radio-12">
                 <div class="input-1-heading">
                     <h1>Checkboxes</h1>
                 </div>
@@ -389,20 +389,23 @@
                     <h1>Toggle Buttons</h1>
                 </div>
 
-                <div class="checkbox-container">
-                    <!-- <div class="checkbox-1 radiobox-1 toggle-1">
-                        <input type="checkbox" name="unchecked" class="check1">
-                        <span class="checkmark  radiomark" id="unchecked-radio"></span>
-                        <span class="label">Radio Is Off</span>
-                    </div> -->
+                <div class="checkbox-container toggle-container">
 
-                    <div class="checkbox-1 toggle">
-                        <input type="checkbox" id="toggle-switch" class="check1">
-                        <label for="toggle-switch" class="toggle-label"></label>
-                        <span class="label">Toggle</span>
+                    <div class="toggle-on-container">
+                        <div class="toggle-on" id="toggle-bg">
+                            <div class="on" id="on"></div>
+                            <div class="off" id="off"></div>
+                        </div>
+                        <span>Toggle On</span>
                     </div>
-                    
 
+                    <div class="toggle-on-container">
+                        <div class="toggle-on" id="toggle-bg">
+                            <div class="on" id="on"></div>
+                            <div class="off" id="off"></div>
+                        </div>
+                        <span>Toggle On</span>
+                    </div>
 
                 </div>
 
@@ -411,6 +414,83 @@
 
         </div>
     </section>
+
+    <section class="badges radios button button-container">
+        <div class="main-badges-container">
+            <div class="sliders-container">
+                <div class="input-1-heading">
+                    <h1>Sliders</h1>
+                </div>
+                <div class="sliders-con">
+                    <div class="slider-1"></div>
+                    <div class="slider-1 slider-2"></div>
+                </div>
+            </div>
+
+            <div class="badges-container">
+                <div class="input-1-heading">
+                    <h1>Badges</h1>
+                </div>
+
+                <div class="badg-con">
+                    <span class="bages bages-primary">Primary</span>
+                    <span class="bages bages-info">Info</span>
+                    <span class="bages bages-success">Success</span>
+                    <span class="bages bages-warning">Warning</span>
+                    <span class="bages bages-danger">Danger</span>
+                    <span class="bages bages-rose">Rose</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="badges radios button button-container">
+        <div class="main-badges-container">
+            <div class="sliders-container">
+                <div class="input-1-heading">
+                    <h1>Progress bars</h1>
+                </div>
+                <div class="sliders-con">
+                    <div class="slider-1-container">
+
+                        <div class="slider-1">
+                            <div class="slider-1-primary primary"></div>
+                        </div>
+                        <div class="slider-1">
+                            <div class="slider-1-primary primary"></div>
+                        </div>
+                        <div class="slider-1">
+                            <div class="slider-1-primary primary"></div>
+                        </div>
+                        <div class="slider-1">
+                            <div class="slider-1-primary primary"></div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="badges-container">
+                <div class="input-1-heading">
+                    <h1>Paginations</h1>
+                </div>
+
+                <div class="badg-con">
+                    <span class="bages bages-primary">Primary</span>
+                    <span class="bages bages-info">Info</span>
+                    <span class="bages bages-success">Success</span>
+                    <span class="bages bages-warning">Warning</span>
+                    <span class="bages bages-danger">Danger</span>
+                    <span class="bages bages-rose">Rose</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 

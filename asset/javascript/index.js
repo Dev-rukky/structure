@@ -22,7 +22,6 @@ const uncheckRadio = document.getElementById("unchecked-radio");
 
 
 
-
 navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     if (navMenu.classList.contains("active")) {
@@ -94,13 +93,31 @@ uncheckRadio.addEventListener("click", () => {
     checkRadio.classList.remove("radiomark-clicked");
 });
 
-const toggleSwitch = document.getElementById("toggle-switch");
+// const toggleSwitch = document.getElementById("toggle-switch");
 
-toggleSwitch.addEventListener("change", () => {
-    const toggleLabel = toggleSwitch.nextElementSibling;
-    if (toggleSwitch.checked) {
-        toggleLabel.style.backgroundColor = "#4CAF50"; // Color when it's ON
+// toggleSwitch.addEventListener("change", () => {
+//     const toggleLabel = toggleSwitch.nextElementSibling;
+//     if (toggleSwitch.checked) {
+//         toggleLabel.style.backgroundColor = "#4CAF50"; // Color when it's ON
+//     } else {
+//         toggleLabel.style.backgroundColor = "#ccc"; // Color when it's OFF
+//     }
+// });
+
+const toggleContainer = document.querySelector('.toggle-on-container');
+const onElement = document.querySelector('.on');
+const offElement = document.querySelector('.off');
+const toggleBackground = document.querySelector('#toggle-bg');
+
+
+toggleContainer.addEventListener('click', () => {
+    toggleBackground.classList.toggle('off-background');
+    if (onElement.style.display === 'none') {
+        offElement.style.display = 'none';
+        onElement.style.display = 'block';
     } else {
-        toggleLabel.style.backgroundColor = "#ccc"; // Color when it's OFF
+        offElement.style.display = 'block';
+        onElement.style.display = 'none';
     }
 });
+
