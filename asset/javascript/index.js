@@ -12,8 +12,8 @@ const floatEl = document.getElementById("float-input");
 const labelEl = document.getElementById("float-label");
 const uncheckEl = document.getElementById("unchecked-icon");
 const checkEl = document.getElementById("checked-icon");
-const UncheckInput = document.getElementById("unchecked");
-const checkInput = document.getElementById("checked");
+const checkRadio = document.getElementById("checked-radio");
+const uncheckRadio = document.getElementById("unchecked-radio");
 
 
 
@@ -70,15 +70,37 @@ dropBtn3.addEventListener("click", () => {
 
 floatEl.addEventListener("click", () => {
     labelEl.classList.toggle("label-float");
-})
+});
 
 
 uncheckEl.addEventListener("click", () => {
     uncheckEl.classList.add("click-check");
-    checkEl.classList.remove("clicked-check");
-}) 
+    checkEl.classList.remove("click-check");
+});
 
 checkEl.addEventListener("click", () => {
     checkEl.classList.add("click-check");
-    uncheckEl.classList.remove("unclick-check");
-}) 
+    uncheckEl.classList.remove("click-check");
+});
+
+
+checkRadio.addEventListener("click", () => {
+    checkRadio.classList.add("radiomark-clicked");
+    uncheckRadio.classList.remove("radiomark-clicked");
+});
+
+uncheckRadio.addEventListener("click", () => {
+    uncheckRadio.classList.add("radiomark-clicked");
+    checkRadio.classList.remove("radiomark-clicked");
+});
+
+const toggleSwitch = document.getElementById("toggle-switch");
+
+toggleSwitch.addEventListener("change", () => {
+    const toggleLabel = toggleSwitch.nextElementSibling;
+    if (toggleSwitch.checked) {
+        toggleLabel.style.backgroundColor = "#4CAF50"; // Color when it's ON
+    } else {
+        toggleLabel.style.backgroundColor = "#ccc"; // Color when it's OFF
+    }
+});
