@@ -1310,6 +1310,49 @@ nav {
 }
 
 
+.menu-1-nav {
+    height: 90px;
+    position: static;
+    justify-content: space-between;
+    width: 540px;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.menu-1-logo a {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.menu-1-right a {
+    color: #ffffffb3;
+    padding: 16px;
+}
+
+.menus-con {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-2 {
+    padding: 0 15px;
+}
+
+.navigation-1-nav {
+    position: static;
+}
+
+.navigation {
+    padding: 3rem 0;
+}
+
+.navigation-heading {
+    margin: 0 120px 24px;
+}
+
+
 
 
 @keyframes wheel-up-down {
