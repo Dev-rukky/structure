@@ -1143,22 +1143,27 @@ nav {
     background-color: var(--primary-color);
     color: #fff;
 }
+
 .bages-info {
     background-color: var(--info-color);
     color: #fff;
 }
+
 .bages-success {
     background-color: var(--success-color);
     color: #000;
 }
+
 .bages-warning {
     background-color: var(--warning-color);
     color: #000;
 }
+
 .bages-danger {
     background-color: var(--danger-color);
     color: #fff;
 }
+
 .bages-rose {
     color: #bfbfbf;
 }
@@ -1177,14 +1182,54 @@ nav {
 }
 
 
-.slider-1-primary {
-    width: 40%;
+.progress-bar {
     height: 4px;
     border-radius: 4px 0 0 4px;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem;
 }
 
+.slider-1-primary {
+    width: 40%;
+}
+
+.slider-1-info {
+    width: 60%;
+}
+
+.slider-1-warning {
+    width: 70%;
+}
+
+.slider-1-success {
+    width: 35%;
+    position: absolute;
+    z-index: 10;
+}
+
+.slider-2-warning {
+    width: 55%;
+    position: absolute;
+}
+
+.slider-1-danger {
+    width: 85%;
+}
+
+
+
+
+.progress-container {
+    width: 100%;
+    background-color: #ccc;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
 
 
 
