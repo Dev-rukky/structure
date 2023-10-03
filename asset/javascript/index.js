@@ -121,3 +121,61 @@ toggleContainer.addEventListener('click', () => {
     }
 });
 
+
+
+
+const pagesContainer1 = document.querySelector('.pages-1-container');
+const pagesContainer2 = document.querySelector('.pages-2-container');
+const totalPages1 = 5;
+const totalPages2 = 7;
+
+let currentPage1 = 1;
+let currentPage2 = 1;
+
+function updatePagination1() {
+
+    const pages1 = document.querySelectorAll('.page');
+    pages1.forEach(page => {
+        page.classList.remove('page-active');
+    });
+
+
+    const currentPageElement = document.querySelector(`.page${currentPage1}`);
+    currentPageElement.classList.add('page-active');
+}
+
+function updatePagination2() {
+    const pages2 = document.querySelectorAll('.page__1 a');
+    pages2.forEach(page => {
+        page.classList.remove('page-active');
+    });
+
+    const currentPageElement = document.querySelector(`.page${currentPage2} a`);
+    currentPageElement.classList.add('page-active');
+}
+
+document.querySelector('.page-next').addEventListener('click', () => {
+    if (currentPage1 < totalPages1) {
+        currentPage1++;
+        updatePagination1();
+    }
+});
+
+document.querySelector('.page-previous').addEventListener('click', () => {
+    if (currentPage1 > 1) {
+        currentPage1--;
+        updatePagination1();
+    }
+});
+
+const pageLinks = document.querySelectorAll('.page__1 a');
+pageLinks.forEach((link, index) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentPage2 = index + 1;
+        updatePagination2();
+    });
+});
+
+updatePagination1();
+updatePagination2();
