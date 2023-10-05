@@ -179,3 +179,26 @@ pageLinks.forEach((link, index) => {
 
 updatePagination1();
 updatePagination2();
+
+
+
+
+function changeTab(tabNumber) {
+    // Hide all tab content
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+        tab.style.display = 'none';
+    });
+
+    // Remove active class from all nav links
+    const navLinks = document.querySelectorAll('.nav-pill-link');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Show the selected tab content and set the active class on the clicked nav link
+    const selectedTab = document.getElementById(`content${tabNumber}`);
+    const selectedNavLink = document.querySelector(`.nav-link:nth-child(${tabNumber})`);
+    selectedTab.style.display = 'block';
+    selectedNavLink.classList.add('active');
+}

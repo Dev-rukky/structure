@@ -1450,7 +1450,29 @@ nav {
 
 
 
+.nav-pills {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
 
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-pill-link {
+    text-decoration: none;
+    color: #333;
+    background-color: #ccc;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-pill-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
 
 
 
