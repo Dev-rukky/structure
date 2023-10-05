@@ -1374,6 +1374,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 205px;
+    background: transparent;
 
 }
 
@@ -1382,6 +1383,7 @@ nav {
     gap: 0;
     justify-content: space-between;
     margin: 0 auto;
+    background: transparent;
 }
 
 .navigation {
@@ -1445,6 +1447,15 @@ nav {
 
 .navigation-social a {
     color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
 }
 
 
@@ -1577,6 +1588,123 @@ nav {
         align-items: center;
         justify-content: flex-start;
     }
+
+    .nav-white {
+        padding: 20px 40px 20px;
+
+        .nav-logo a {
+            color: #000;
+            text-align: left;
+        }
+
+        .nav-link ul {
+            display: none;
+        }
+
+        .nav-link.active ul {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            row-gap: 15px;
+            padding: 10px 40px;
+            background-color: #fff;
+            z-index: 6;
+        }
+
+        .nav-link ul li {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .nav-bar-toggle-open {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-bar-toggle-open {
+            color: #000 !important;
+        }
+
+        .nav-bar-toggle-open i {
+            color: #000 !important;
+        }
+    }
+
+    .basic,
+    .button {
+        padding: 64px 24px 0;
+    }
+
+    .menus-con {
+        flex-wrap: wrap;
+    }
+
+    .menu-2 {
+        padding: 0;
+    }
+
+    .primary {
+        background-color: var(--primary-color) !important;
+    }
+
+    .success {
+        background-color: var(--success-color) !important;
+    }
+
+    .info {
+        background-color: var(--info-color) !important;
+    }
+
+    .warning {
+        background-color: var(--warning-color) !important;
+    }
+
+    .danger {
+        background-color: var(--danger-color) !important;
+    }
+
+    .dark {
+        background-color: var(--dark-color) !important;
+    }
+
+
+    .input-2 {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 3rem 24px;
+    }
+
+    .navigation-con {
+        flex-direction: column;
+    }
+
+    .navigation-1 {
+        margin-bottom: 20px;
+    }
+
+    .navgation-search {
+        margin-top: 20px;
+    }
+
+    .menu-1-right,
+    .menu-3-right-container,
+    .navigation-social {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-container {
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
 }
 
 @media only screen and (max-width: 768px) {

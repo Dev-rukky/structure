@@ -202,3 +202,11 @@ function changeTab(tabNumber) {
     selectedTab.style.display = 'block';
     selectedNavLink.classList.add('active');
 }
+
+// JavaScript for menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navigationCon = document.querySelector('.navigation-con');
+
+menuToggle.addEventListener('click', () => {
+    navigationCon.classList.toggle('menu-open');
+});
