@@ -57,6 +57,20 @@ h6 {
     background-color: var(--danger-color);
 }
 
+.dark {
+    background-color: var(--dark-color);
+}
+
+.bg {
+    position: relative;
+    height: 400px;
+    background-image: url(/asset/images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+}
+
 
 
 
@@ -1313,10 +1327,18 @@ nav {
 .menu-1-nav {
     height: 90px;
     position: static;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 540px;
     border-radius: 4px;
     padding: 8px 16px;
+}
+
+.menu-2-nav {
+    justify-content: space-between;
+}
+
+.menu-2-toggle {
+    color: #ffffffb3;
 }
 
 .menu-1-logo a {
@@ -1328,6 +1350,12 @@ nav {
 .menu-1-right a {
     color: #ffffffb3;
     padding: 16px;
+}
+
+.menu-1-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .menus-con {
@@ -1342,6 +1370,18 @@ nav {
 
 .navigation-1-nav {
     position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 205px;
+
+}
+
+.navigation-2-nav {
+    max-width: 1110px;
+    gap: 0;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .navigation {
@@ -1349,8 +1389,69 @@ nav {
 }
 
 .navigation-heading {
-    margin: 0 120px 24px;
+    margin: 0 135px 24px;
 }
+
+.navgation-search {
+    display: flex;
+    align-items: center;
+}
+
+.menu-5-right i {
+    margin-right: 5px;
+}
+
+
+.navgation-search input {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    background: transparent !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 0px;
+    width: 198px;
+    height: 48px;
+}
+
+.navgation-search input::placeholder {
+    color: #fff;
+}
+
+.search-btn {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn i {
+    font-size: 10px;
+}
+
+.menu-3-right-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.navigation-social a {
+    color: #fff;
+}
+
+
+
+
+
+
 
 
 
