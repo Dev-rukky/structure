@@ -19,37 +19,39 @@
 </head>
 
 <body>
-    <nav id="nav-el" class="nav-el">
+    <div class="nav-containers">
         <div class="nav-logo">
             <a href="#">Structure.</a>
         </div>
-        <div class="nav-link" id="nav-menu">
-            <ul>
-                <li>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropbtn"><i class="fa-solid fa-layer-group"></i>Components <span
-                                class="dropdown-toggle"></span> </a>
-
-                        <div class="dropdown-content">
-                            <div class="ddc-link">
-                                <a href="#"><i class="fa-solid fa-layer-group small"></i>All Components</a>
-                                <a href="#"><i class="fa-solid fa-file small"></i>Documentation</a>
+        <nav id="nav-el" class="nav-el">
+            <div class="nav-link" id="nav-menu">
+                <ul>
+                    <li>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropbtn"><i class="fa-solid fa-layer-group"></i>Components <span
+                                    class="dropdown-toggle"></span> </a>
+    
+                            <div class="dropdown-content">
+                                <div class="ddc-link">
+                                    <a href="#"><i class="fa-solid fa-layer-group small"></i>All Components</a>
+                                    <a href="#"><i class="fa-solid fa-file small"></i>Documentation</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li><a href="#"><i class="fa-solid fa-cloud-arrow-down"></i>Download</a></li>
-                <li class="premium"><a href="#"><i class="fi fi-ss-duplicate"></i>Premium</a></li>
-                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
-
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-cloud-arrow-down"></i>Download</a></li>
+                    <li class="premium"><a href="#"><i class="fi fi-ss-duplicate"></i>Premium</a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </nav>
         <span class="nav-bar-toggle-open" id="nav_toggle">
             <i class="fa-solid fa-bars"></i>menu
         </span>
-    </nav>
+    </div>
+    
     <!-- Hero Section -->
 
     <section id="banner" class="hero">
@@ -521,6 +523,8 @@
                             <a href="#">Profile</a>
                             <a href="#">Setting</a>
                         </div>
+
+                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
                     </nav>
                 </div>
             </div>
@@ -535,18 +539,24 @@
                         <div class="menu-1-right">
                             <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
                             <a href="#"><i class="fa-solid fa-layer-group"></i></a>
-                            <div class="dropdown-menu-2">
+                            <div class="dropdown-menu dropdown-menu-2">
                                 <a href="#"><i class="fa-solid fa-gear"></i><span
                                         class="dropdown-toggle menu-2-toggle"></span></a>
 
-                                <div class="drop-content" id="dropdown-info1">
-                                    <div class="ddc-link">
+                                <div class="drop-content drop-content-1" id="dropdown-info2">
+                                    <div class="ddc-link-1">
+                                        <h2>Dropdown header</h2>
                                         <a href="#">Action</a>
                                         <a href="#">Another Action</a>
-                                        <a href="#">Something Else</a>
+                                        <a href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Separated link</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">one more separated link</a>
                                     </div>
                                 </div>
                             </div>
+                            <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
                         </div>
                     </nav>
                 </div>
@@ -587,7 +597,18 @@
                         <div class="menu-1-right">
                             <a href="#">Discover</a>
                             <a href="#">Profile</a>
-                            <a href="#">Setting</a>
+                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-3">
+                                <a href="#">Setting<span class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                <div class="drop-content drop-content-1 drop-content-2" id="dropdown-info2">
+                                    <div class="ddc-link-1 ddc-link-2">
+                                        <a href="#">Action</a>
+                                        <a href="#">Another Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
 
@@ -603,7 +624,18 @@
                             <div class="menu-1-right">
                                 <a href="#">Discover</a>
                                 <a href="#">Profile</a>
-                                <a href="#">Setting</a>
+                                <div class="dropdown-menu dropdown-menu-2 dropdown-menu-3">
+                                    <a href="#">Setting<span class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                    <div class="drop-content drop-content-1 drop-content-2" id="dropdown-info2">
+                                        <div class="ddc-link-1 ddc-link-2">
+                                            <a href="#">Action</a>
+                                            <a href="#">Another Action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="navigation-social">
                                 <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
@@ -624,8 +656,23 @@
                         <div class="menu-1-right">
                             <a href="#"><i class="fa-regular fa-compass"></i></a>
                             <a href="#"><i class="fa-regular fa-user"></i></a>
-                            <a href="#"><i class="fa-solid fa-gear"></i><span
-                                    class="dropdown-toggle menu-2-toggle"></span></a>
+                            <div class="dropdown-menu dropdown-menu-2">
+                                <a href="#"><i class="fa-solid fa-gear"></i><span
+                                        class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                <div class="drop-content drop-content-1" id="dropdown-info2">
+                                    <div class="ddc-link-1">
+                                        <h2>Dropdown header</h2>
+                                        <a href="#">Action</a>
+                                        <a href="#">Another Action</a>
+                                        <a href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Separated link</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">one more separated link</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
 
@@ -641,8 +688,24 @@
                             <a href="#">Home</a>
                             <a href="#"><i class="fa-regular fa-compass"></i>Discover</a>
                             <a href="#"><i class="fa-regular fa-user"></i>Profile</a>
-                            <a href="#"><i class="fa-solid fa-gear"></i>Settings<span
-                                    class="dropdown-toggle menu-2-toggle"></span></a>
+                            <div class="dropdown-menu dropdown-menu-2">
+                                <a href="#"><i class="fa-solid fa-gear"></i>Settings<span
+                                        class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                <div class="drop-content drop-content-1" id="dropdown-info2">
+                                    <div class="ddc-link-1">
+                                        <h2>Dropdown header</h2>
+                                        <a href="#">Action</a>
+                                        <a href="#">Another Action</a>
+                                        <a href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Separated link</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">one more separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
 
@@ -657,7 +720,18 @@
                         <div class="menu-1-right menu-5-right">
                             <a href="#">Discover</a>
                             <a href="#">Profile</a>
-                            <a href="#">Settings<span class="dropdown-toggle menu-2-toggle"></span></a>
+                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-3">
+                                <a href="#">Setting<span class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                <div class="drop-content drop-content-1 drop-content-2" id="dropdown-info2">
+                                    <div class="ddc-link-1 ddc-link-2">
+                                        <a href="#">Action</a>
+                                        <a href="#">Another Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
 
@@ -672,7 +746,18 @@
                         <div class="menu-1-right menu-5-right">
                             <a href="#">Discover</a>
                             <a href="#">Profile</a>
-                            <a href="#">Settings<span class="dropdown-toggle menu-2-toggle"></span></a>
+                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-3">
+                                <a href="#">Setting<span class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                <div class="drop-content drop-content-1 drop-content-2" id="dropdown-info2">
+                                    <div class="ddc-link-1 ddc-link-2">
+                                        <a href="#">Action</a>
+                                        <a href="#">Another Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
 
@@ -690,38 +775,38 @@
                 <div class="input-1-heading">
                     <h1>Navigation Pills</h1>
                 </div>
-            
-             <div class="nav-pill-heading">
-                <ul class="nav-pills">
-                    <li class="nav-item">
-                        <a href="#" class="nav-pill-link" onclick="changeTab(1)">Tab 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-pill-link" onclick="changeTab(2)">Tab 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-pill-link" onclick="changeTab(3)">Tab 3</a>
-                    </li>
-                </ul>
-             </div>
-             
-             <div id="tab-content">
-                <div id="content1" class="tab">
-                    <h2>Tab 1 Content</h2>
-                    <p>This is the content for Tab 1.</p>
+
+                <div class="nav-pill-heading">
+                    <ul class="nav-pills">
+                        <li class="nav-item">
+                            <a href="#" class="nav-pill-link" onclick="changeTab(1)">Tab 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-pill-link" onclick="changeTab(2)">Tab 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-pill-link" onclick="changeTab(3)">Tab 3</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="content2" class="tab" style="display: none;">
-                    <h2>Tab 2 Content</h2>
-                    <p>This is the content for Tab 2.</p>
+
+                <div id="tab-content">
+                    <div id="content1" class="tab">
+                        <h2>Tab 1 Content</h2>
+                        <p>This is the content for Tab 1.</p>
+                    </div>
+                    <div id="content2" class="tab" style="display: none;">
+                        <h2>Tab 2 Content</h2>
+                        <p>This is the content for Tab 2.</p>
+                    </div>
+                    <div id="content3" class="tab" style="display: none;">
+                        <h2>Tab 3 Content</h2>
+                        <p>This is the content for Tab 3.</p>
+                    </div>
                 </div>
-                <div id="content3" class="tab" style="display: none;">
-                    <h2>Tab 3 Content</h2>
-                    <p>This is the content for Tab 3.</p>
-                </div>
+
             </div>
 
-        </div>
-           
     </section>
 
 
