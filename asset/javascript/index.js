@@ -205,8 +205,8 @@ function changeTab(tabNumber) {
 
 // JavaScript for menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
-const navigationCon = document.querySelector('.navigation-con');
+const navigationCon1 = document.querySelector('.nav-container');
 
 menuToggle.addEventListener('click', () => {
-    navigationCon.classList.toggle('menu-open');
+    navigationCon1.classList.toggle('menu-1-right-active');
 });
