@@ -23,14 +23,14 @@
         <div class="nav-logo">
             <a href="#">Structure.</a>
         </div>
-        <nav  class="nav-el">
+        <nav class="nav-el">
             <div class="nav-link" id="nav-menu">
                 <ul>
                     <li>
                         <div class="dropdown-menu">
                             <a href="#" class="dropbtn"><i class="fa-solid fa-layer-group"></i>Components <span
                                     class="dropdown-toggle"></span> </a>
-    
+
                             <div class="dropdown-content">
                                 <div class="ddc-link">
                                     <a href="#"><i class="fa-solid fa-layer-group small"></i>All Components</a>
@@ -51,7 +51,7 @@
             <i class="fa-solid fa-bars"></i>menu
         </span>
     </div>
-    
+
     <!-- Hero Section -->
 
     <section id="banner" class="hero">
@@ -532,12 +532,121 @@
                 <div class="input-1-heading">
                     <h1>Menu With Icon</h1>
                 </div>
-                <div class="nav-container info">
+                <div class="nav-container1 info">
                     <div class="menu-1-logo"><a href="#">Menu</a></div>
                     <nav class="menu-1-nav menu-2-nav">
-                        <div class="menu-1-right menu-2-right">
+                        <div class="menu-1-right menu-2-right" id="menu-2-right">
                             <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
                             <a href="#"><i class="fa-solid fa-layer-group"></i></a>
+                            <div class="dropdown-menu dropdown-menu-2">
+                                <a href="#"><i class="fa-solid fa-gear"></i><span
+                                        class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                <div class="drop-content drop-content-1" id="dropdown-info2">
+                                    <div class="ddc-link-1">
+                                        <h2>Dropdown header</h2>
+                                        <a href="#">Action</a>
+                                        <a href="#">Another Action</a>
+                                        <a href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Separated link</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">one more separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <button class="menu-toggle-1"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="navigation">
+        <div class="navigation-con">
+            <div class="input-1-heading navigation-heading">
+                <h1>Navigations</h1>
+            </div>
+            <div class="navigation-1">
+                <div class="nav-container primary">
+                    <div class="menu-1-logo"><a href="#">Primary Color</a></div>
+                    <nav class="navigation-1-nav">
+                        <div class="menu-1-right">
+                            <a href="#">Discover</a>
+                            <a href="#">Profile</a>
+                            <a href="#">Setting</a>
+                        </div>
+                        <div class="navgation-search">
+                            <input type="search" name="" id="" placeholder="Search">
+                            <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+                    </nav>
+                    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="navigation-1">
+                <div class="nav-container-2 success">
+                    <div class="menu-1-logo"><a href="#">Success Color</a></div>
+                    <nav class="navigation-1-nav">
+                        <div class="menu-1-right">
+                            <a href="#">Discover</a>
+                            <a href="#">Profile</a>
+                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-3">
+                                <a href="#">Setting<span class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                <div class="drop-content drop-content-1 drop-content-2" id="dropdown-info2">
+                                    <div class="ddc-link-1 ddc-link-2">
+                                        <a href="#">Action</a>
+                                        <a href="#">Another Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="navigation-1">
+                <div class="nav-container-3 info">
+                    <div class="menu-1-logo"><a href="#">Info Color</a></div>
+                    <nav class="navigation-1-nav">
+                        <div class="menu-1-right">
+                            <a href="#">Discover</a>
+                            <a href="#">Profile</a>
+                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-3">
+                                <a href="#">Setting<span class="dropdown-toggle menu-2-toggle"></span></a>
+
+                                <div class="drop-content drop-content-1 drop-content-2" id="dropdown-info2">
+                                    <div class="ddc-link-1 ddc-link-2">
+                                        <a href="#">Action</a>
+                                        <a href="#">Another Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigation-social">
+                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+
+            <div class="navigation-1">
+                <div class="nav-container-4 danger">
+                    <div class="menu-1-logo"><a href="#">Danger Color</a></div>
+                    <nav class="navigation-1-nav">       
+                        <div class="menu-1-right">
+                            <a href="#"><i class="fa-regular fa-compass"></i></a>
+                            <a href="#"><i class="fa-regular fa-user"></i></a>
                             <div class="dropdown-menu dropdown-menu-2">
                                 <a href="#"><i class="fa-solid fa-gear"></i><span
                                         class="dropdown-toggle menu-2-toggle"></span></a>
@@ -560,129 +669,11 @@
                     <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <section class="navigation">
-        <div class="navigation-con">
-            <div class="input-1-heading navigation-heading">
-                <h1>Navigations</h1>
-            </div>
-            <div class="navigation-1">
-                <div class="nav-container primary">
-                    <nav class="navigation-1-nav">
-                        <div class="menu-1-logo"><a href="#">Primary Color</a></div>
-                        <div class="menu-1-right">
-                            <a href="#">Discover</a>
-                            <a href="#">Profile</a>
-                            <a href="#">Setting</a>
-                        </div>
-                        <div class="navgation-search">
-                            <input type="search" name="" id="" placeholder="Search">
-                            <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        </div>
-
-                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-
-                    </nav>
-                </div>
-            </div>
-
-            <div class="navigation-1 navigation-2">
-                <div class="nav-container success">
-                    <nav class="navigation-1-nav navigation-2-nav">
-                        <div class="menu-1-logo"><a href="#">Success Color</a></div>
-                        <div class="menu-1-right">
-                            <a href="#">Discover</a>
-                            <a href="#">Profile</a>
-                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-3">
-                                <a href="#">Setting<span class="dropdown-toggle menu-2-toggle"></span></a>
-
-                                <div class="drop-content drop-content-1 drop-content-2" id="dropdown-info2">
-                                    <div class="ddc-link-1 ddc-link-2">
-                                        <a href="#">Action</a>
-                                        <a href="#">Another Action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#">Something else here</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-
-                    </nav>
-                </div>
-            </div>
 
             <div class="navigation-1">
-                <div class="nav-container info">
-                    <nav class="navigation-1-nav navigation-2-nav">
-                        <div class="menu-1-logo"><a href="#">Info Color</a></div>
-                        <div class="menu-3-right-container">
-                            <div class="menu-1-right">
-                                <a href="#">Discover</a>
-                                <a href="#">Profile</a>
-                                <div class="dropdown-menu dropdown-menu-2 dropdown-menu-3">
-                                    <a href="#">Setting<span class="dropdown-toggle menu-2-toggle"></span></a>
-
-                                    <div class="drop-content drop-content-1 drop-content-2" id="dropdown-info2">
-                                        <div class="ddc-link-1 ddc-link-2">
-                                            <a href="#">Action</a>
-                                            <a href="#">Another Action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navigation-social">
-                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-
-                    </nav>
-                </div>
-            </div>
-
-            <div class="navigation-1 navigation-2">
-                <div class="nav-container danger">
-                    <nav class="navigation-1-nav navigation-2-nav">
-                        <div class="menu-1-logo"><a href="#">Danger Color</a></div>
-                        <div class="menu-1-right">
-                            <a href="#"><i class="fa-regular fa-compass"></i></a>
-                            <a href="#"><i class="fa-regular fa-user"></i></a>
-                            <div class="dropdown-menu dropdown-menu-2">
-                                <a href="#"><i class="fa-solid fa-gear"></i><span
-                                        class="dropdown-toggle menu-2-toggle"></span></a>
-
-                                <div class="drop-content drop-content-1" id="dropdown-info2">
-                                    <div class="ddc-link-1">
-                                        <h2>Dropdown header</h2>
-                                        <a href="#">Action</a>
-                                        <a href="#">Another Action</a>
-                                        <a href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#">Separated link</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#">one more separated link</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-
-                    </nav>
-                </div>
-            </div>
-
-            <div class="navigation-1 navigation-2">
-                <div class="nav-container warning">
-                    <nav class="navigation-1-nav navigation-2-nav">
-                        <div class="menu-1-logo"><a href="#">Info Color</a></div>
+                <div class="nav-container-5 warning">
+                    <div class="menu-1-logo"><a href="#">Info Color</a></div>
+                    <nav class="navigation-1-nav">     
                         <div class="menu-1-right menu-5-right">
                             <a href="#">Home</a>
                             <a href="#"><i class="fa-regular fa-compass"></i>Discover</a>
@@ -704,18 +695,16 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-
                     </nav>
+                    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
                 </div>
             </div>
 
-            <div class="navigation-1 navigation-2">
-                <div class="nav-container dark">
-                    <nav class="navigation-1-nav navigation-2-nav">
-                        <div class="menu-1-logo"><a href="#">Dark Color</a></div>
+            <div class="navigation-1">
+                <div class="nav-container-6 dark">
+                    <div class="menu-1-logo"><a href="#">Dark Color</a></div>
+                    <nav class="navigation-1-nav">      
                         <div class="menu-1-right menu-5-right">
                             <a href="#">Discover</a>
                             <a href="#">Profile</a>
@@ -731,17 +720,16 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-
+                        </div>              
                     </nav>
+                    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
                 </div>
             </div>
 
             <div class="navigation-1 navigation-2 bg-navigation">
                 <div class="nav-container bg">
-                    <nav class="navigation-1-nav navigation-2-nav bg-navigation-6">
-                        <div class="menu-1-logo"><a href="#">Backgroung image</a></div>
+                    <div class="menu-1-logo"><a href="#">Backgroung image</a></div>
+                    <nav class="navigation-1-nav navigation-2-nav bg-navigation-6">                    
                         <div class="menu-1-right menu-5-right">
                             <a href="#">Discover</a>
                             <a href="#">Profile</a>
@@ -758,9 +746,8 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-
                     </nav>
+                    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
                 </div>
             </div>
 

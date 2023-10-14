@@ -14,13 +14,21 @@ const uncheckEl = document.getElementById("unchecked-icon");
 const checkEl = document.getElementById("checked-icon");
 const checkRadio = document.getElementById("checked-radio");
 const uncheckRadio = document.getElementById("unchecked-radio");
+const navMenu1 = document.querySelector(".menu-1-right");
+const navToggle1 = document.querySelector(".menu-toggle");
+const navMenu2 = document.getElementById("menu-2-right");
+const navToggle2 = document.querySelector(".menu-toggle-1");
 
 
 
 
 
-
-
+navToggle1.addEventListener("click", () => {
+    navMenu1.classList.toggle("menu-1-right-active")
+});
+navToggle2.addEventListener("click", () => {
+    navMenu2.classList.toggle("menu-2-right-active")
+});
 
 navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
