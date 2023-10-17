@@ -1423,17 +1423,21 @@ h6 {
     padding: 0 15px;
 }
 
-.nav-container{
+.nav-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 76px;
 }
-.nav-container-3,.nav-container-4,.nav-container-5,.nav-container-6{
+
+.nav-container-3,
+.nav-container-4,
+.nav-container-5,
+.nav-container-6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;  
+    padding: 10px 50px;
 }
 
 .nav-container1 {
@@ -1843,15 +1847,23 @@ h6 {
         display: block;
     }
 
-
+    .nav-container-2 {
+        gap: 0;
+        padding: 10px 50px;
+        justify-content: space-between;
+    }
 }
+
+
+
 
 @media only screen and (max-width: 768px) {
     .text h1 {
         font-size: 40px;
     }
 
-    .menu-1-right,.menu-2-right {
+    .menu-1-right,
+    .menu-2-right {
         min-width: 80%;
     }
 
